@@ -1,4 +1,4 @@
-# Module 10: The EP Knowledge Base
+# Bonus Module: The EP Knowledge Base
 
 ## What We're Doing
 
