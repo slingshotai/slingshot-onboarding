@@ -90,6 +90,6 @@ Ask SAM if you want to understand any section in more depth.
 
 ---
 
-[[04 - Starter Exercise|← Starter Exercise]] | [[06 - Advanced Exercise|Next → Advanced Exercise]]
+[[04 - Starter Exercise|← Starter Exercise]] | [[05B - The Slingshot Framework|Next → The Slingshot Framework]]
 
  

@@ -23,7 +23,8 @@ The modules:
 3. **How Skills Work** — what's actually happening under the hood
 4. **Starter Exercise** — research something and build a playbook
 5. **Install Your First Skill** — purchase and install Brand Voice using store credit
-6. **Advanced Exercise** — install a skill that needs an external API
+6. **The Slingshot Framework** — the map that connects every skill to your business
+7. **Advanced Exercise** — install a skill that needs an external API
 7. **Meet SAM** — your learning companion for everything that comes next
 8. **What's Next** — the store, the community, and where to go from here
 

@@ -125,4 +125,4 @@ This was the hardest module in the onboarding. If you made it through, every ski
 
 ---
 
-[[05 - Install Your First Skill|← Install Your First Skill]] | [[07 - Meet SAM|Next → Meet SAM]]
+[[05B - The Slingshot Framework|← The Slingshot Framework]] | [[07 - Meet SAM|Next → Meet SAM]]
