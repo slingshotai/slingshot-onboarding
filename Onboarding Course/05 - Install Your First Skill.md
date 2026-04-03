@@ -126,7 +126,7 @@ You should see Claude confirm that Brand Voice Pro is installed and ready.
 
 ## Part 3: Run Brand Voice Pro
 
-Video link: *(coming soon)*
+Video link: https://www.youtube.com/watch?v=5AAO8fDDfrE
 
 ### Step 1: Run It
 
