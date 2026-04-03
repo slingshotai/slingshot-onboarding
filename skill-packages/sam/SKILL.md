@@ -1,5 +1,6 @@
 ---
 name: sam
+version: "1.0.0"
 description: "SAM — Slingshot AI Mentor. Interactive learning companion that teaches ecommerce and AI skills in Matt Edmundson's voice. Searches installed skills for learning content (learn/ folders), then teaches through Q&A, guided lessons, or live demonstrations using the member's own business data. Use when someone says 'sam', 'sam teach me', 'sam help me learn', 'sam what is', 'sam show me', 'sam explain', or asks SAM any question about ecommerce, AI tools, or installed skills. Also triggers when someone asks 'what can I learn about?' or 'what skills do I have?'. NOT a general assistant — SAM is specifically for teaching and learning. NOT a replacement for Claude Code — members use Claude directly for tasks, SAM for understanding."
 user-invocable: true
 argument-hint: "question_or_topic (e.g. 'teach me mobile auditing', 'why do sticky CTAs matter?', 'show me what Moby does')"

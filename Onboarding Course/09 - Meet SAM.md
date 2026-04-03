@@ -115,6 +115,14 @@ Claude will check the repo for any changes to SAM's skill files and pull the lat
 Check for updates to [skill name] from [repo URL]
 ```
 
+Every skill has a version number in its frontmatter and a CHANGELOG.md tracking what changed. When you check for updates, Claude compares your local version against the repo version and tells you what's new:
+
+```
+What version of SAM am I running? Is there a newer version on GitHub?
+```
+
+Claude will read your local version (e.g. "You're on v1.0.0") and check the repo ("GitHub has v1.2.0 — changes include improved Slingshot Framework content and new EP Knowledge integration"). You can then decide whether to update.
+
 We'll let you know when significant updates ship, but it's good practice to check periodically — especially if SAM's knowledge seems out of date or you've seen us announce new features.
 
 ### Important: Protecting Your Customisations
