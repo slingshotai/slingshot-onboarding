@@ -1,6 +1,6 @@
 # Module 6: Advanced Exercise — APIs & MCP Servers
 
-## What We're Doing
+## Part 1: Introduction
 
 Some SlingshotAI skills need to connect to external services. This module covers two types of connection:
 
@@ -9,21 +9,38 @@ Some SlingshotAI skills need to connect to external services. This module covers
 
 This is the most technical module in the onboarding. If you can do this, you can handle anything SlingshotAI ships. And Claude does the heavy lifting — you just need to follow along and understand what's happening.
 
-## Why Some Skills Need External Connections
+### Why Some Skills Need External Connections
 
-Think of an API key as a password that lets Claude access an external service on your behalf. For example:
+Think of it this way:
+
+- **API keys** give Claude access to **data** it can't get on its own. Google's PageSpeed data, Shopify analytics, search engine results — these live behind passwords.
+- **MCP servers** give Claude new **abilities** it doesn't have natively. Taking screenshots of websites, reading your email, checking your calendar — these require plugins.
+
+Most SlingshotAI skills don't need either. But the powerful ones do — Moby needs both a Google API key AND Playwright MCP. Once you've set these up once, they work for every skill that needs them.
+
+**This module is optional.** If you want to skip it for now, that's fine — come back when you buy a skill that needs an API or MCP server. SAM can walk you through any of this at any time.
+
+---
+
+## Part 2: API Keys
+
+Video link: *(coming soon)*
+
+### What Is an API Key?
+
+An API key is a password that lets Claude access an external service on your behalf. For example:
 
 - **Moby (Mobile Audit)** needs a Google PageSpeed API key to check your site's speed
 - **Narrative Binding** needs a Google API key to access research data
 - Some future skills may need Shopify API access, analytics connections, etc.
 
-The API key is free to get (most services have a free tier). It lives on your machine — not in the cloud, not shared with anyone.
+The key is free to get (most services have a free tier). It lives on your machine — not in the cloud, not shared with anyone.
 
-## The Exercise: Get a Google API Key
+### The Exercise: Get a Google API Key
 
 We're going to get a Google PageSpeed Insights API key. This is the most common API you'll need across SlingshotAI skills, and it's completely free.
 
-### Step 1: Ask Claude to Guide You
+#### Step 1: Ask Claude to Guide You
 
 ```
 Help me get a Google PageSpeed Insights API key. I've never done this before —
@@ -37,13 +54,7 @@ Claude will walk you through:
 4. Generating an API key
 5. Saving it securely on your machine
 
-### Step 2: Watch the Video (Optional)
-
-> **Video:** [Getting your first API key — step by step] *(link to walkthrough video)*
->
-> Matt walks through the exact same process. Watch this if Claude's text instructions aren't clear enough, or if you want to see it done before doing it yourself.
-
-### Step 3: Verify It Works
+#### Step 2: Verify It Works
 
 Once you have the key, ask Claude:
 
@@ -53,18 +64,11 @@ Test my Google PageSpeed API key by checking the speed of my store: [your URL]
 
 Claude will use the key to call the PageSpeed API and return your site's speed scores. If it works, the key is valid and you're set.
 
-### Step 4: Store It Securely
+#### Step 3: Store It Securely
 
 Claude will help you save the key in a way that any skill can access it without you re-entering it each time. This is a one-time setup.
 
-## What If Your IT Department Blocks This?
-
-If you're in a corporate environment and can't access Google Cloud Console, see the Security & Data FAQ in the SlingshotAI project doc. Options include:
-- Running on a personal machine (the API only accesses public website data)
-- Having IT approve Google Cloud Console access (it's a standard Google service)
-- Using a dedicated machine for AI work
-
-## What Just Happened
+### What Just Happened
 
 You've now:
 1. Obtained an API key from an external service
@@ -72,13 +76,24 @@ You've now:
 3. Verified it works by making a real API call
 4. Stored it for future use
 
-This pattern applies to any skill that needs external connections. The service changes (Google, Shopify, whatever), but the process is the same: get the key, give it to Claude, verify, store.
+This pattern applies to any skill that needs an API. The service changes (Google, Shopify, whatever), but the process is the same: get the key, give it to Claude, verify, store.
 
-## MCP Servers: Giving Claude New Abilities
+### What If Your IT Department Blocks This?
 
-API keys give Claude access to data. MCP servers give Claude new abilities — things it can't do on its own.
+If you're in a corporate environment and can't access Google Cloud Console, options include:
+- Running on a personal machine (the API only accesses public website data)
+- Having IT approve Google Cloud Console access (it's a standard Google service)
+- Using a dedicated machine for AI work
+
+---
+
+## Part 3: MCP Servers
+
+Video link: *(coming soon)*
 
 ### What Is an MCP Server?
+
+API keys give Claude access to data. MCP servers give Claude new abilities — things it can't do on its own.
 
 MCP stands for Model Context Protocol. An MCP server is a plugin that extends what Claude can do. For example:
 
@@ -117,12 +132,12 @@ What MCP servers do I have connected?
 
 The same safety rules apply to MCP servers as to skills — only install them from trusted sources. Anthropic maintains a list of verified MCP servers, and any MCP server required by a SlingshotAI skill has been tested by us.
 
+---
+
 ## You're Ready for Anything
 
 This was the hardest module in the onboarding. If you made it through, every skill in the SlingshotAI catalogue is now within your reach — including ones that need API keys and MCP servers.
 
-**This module is optional.** If you skipped it, that's fine — come back when you buy a skill that needs an API or MCP server. SAM can walk you through any of this at any time.
-
 ---
 
-[[05B - The Slingshot Framework|← The Slingshot Framework]] | [[07 - Meet SAM|Next → Meet SAM]]
+[[05 - Install Your First Skill|← Install Your First Skill]] | [[07 - Meet SAM|Next → Meet SAM]]
