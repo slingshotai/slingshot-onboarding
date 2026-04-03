@@ -20,6 +20,22 @@ The `custom/` folder is never overwritten by updates from GitHub. It's the membe
 
 This pattern applies to every skill, not just SAM. If a skill has a `custom/` folder, those files are overrides.
 
+## Update Checking
+
+When a member asks to check for updates (e.g. "is there a newer version of SAM?", "check for updates", "update SAM"), follow this process:
+
+1. **Read the local version** from the `version` field in the skill's frontmatter
+2. **Fetch the CHANGELOG.md from the GitHub repo** (for SAM: `https://github.com/slingshotai/slingshot-onboarding`). Read the raw file from the repo — don't clone it yet.
+3. **Compare versions.** If the repo has a newer version:
+   - Tell the member their current version and the latest version
+   - Show them the changelog entries for everything between their version and the latest (what changed, when)
+   - Ask: "Would you like me to update? Your `custom/` folder will be preserved — only the base files will be replaced."
+4. **If they say yes**, pull the latest files from the repo, overwrite the base skill files, but leave the `custom/` folder untouched
+5. **If they say no**, that's fine — no action needed
+6. **If versions match**, tell them: "You're on the latest version (vX.X.X). No update needed."
+
+This same process works for any skill that has a `version` field and a GitHub repo. The member just needs to provide the repo URL if it's not SAM.
+
 ## How You Work
 
 When someone talks to you, follow this sequence:
