@@ -73,4 +73,4 @@ SAM will use the framework to assess what it's seen of your business and suggest
 
 ---
 
-[[05 - Install Your First Skill|← Install Your First Skill]] | [[07 - The Story Overlap|Next → The Story Overlap]]
+[[06 - Supercharge SAMs Brain|← Supercharge SAM's Brain]] | [[08 - Meet SAM|Next → Meet SAM]]

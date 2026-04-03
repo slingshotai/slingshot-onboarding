@@ -1,15 +1,15 @@
-# SlingshotAI — Onboarding
+# SAM — Slingshot AI Mentor
 
-Welcome to SlingshotAI. This repo contains your onboarding course, SAM (your Slingshot AI Mentor), and the vault folder structure.
+Your AI mentor for ecommerce. This repo contains the onboarding course, SAM's starter brain, and the skill files that make SAM work.
 
 ## Setup Instructions
 
-To set up this repo in your Obsidian vault:
+To set up SAM in your Obsidian vault:
 
 1. Clone this repo into a `SlingshotAI/` folder inside the Obsidian vault
 2. Create empty folders if not present: `Playbooks/`, `Outputs/`, `Notes/`
 3. Copy `skill-packages/sam/` to `~/.claude/skills/sam/`
-4. Clone the EP Knowledge Base from `https://github.com/slingshotai/ep-knowledge` and install to `~/.claude/skills/ep-knowledge/` (copy SKILL.md, learn/, and references/ folders)
+4. Copy `brain/` to `~/.claude/skills/sam/brain/` (this is SAM's starter brain)
 5. Remove the `skill-packages/` folder from the vault (already installed)
 6. Remove this README.md from the vault (installation instructions only)
 7. Set up the member profile at `~/.slingshot/profile.md` by asking:
@@ -39,7 +39,7 @@ To set up this repo in your Obsidian vault:
 
 ## For Humans
 
-If you're reading this on GitHub, this is the onboarding course for SlingshotAI members. To use it:
+If you're reading this on GitHub, this is the home of SAM — the Slingshot AI Mentor for SlingshotAI members. To use it:
 
 1. Install VS Code and Claude Code (Module 1 — on the SlingshotAI website)
 2. Install Obsidian and create a vault (Module 2 — on the website)
@@ -51,15 +51,19 @@ If you're reading this on GitHub, this is the onboarding course for SlingshotAI 
 ```
 Onboarding Course/     11 modules taking you from zero to running skills
   examples/            An example skill you can explore and run
+brain/                 SAM's starter brain (framework overviews)
 Playbooks/             Empty — fills up as you research and install skills
 Outputs/               Empty — fills up as skills generate reports and guides
 Notes/                 Your space for personal notes and learnings
-skill-packages/        SAM (Slingshot AI Mentor) — installed during setup
-                       EP Knowledge Base installed separately from its own repo
+skill-packages/        SAM skill files — installed during setup
 ```
+
+## SAM's Full Brain
+
+The starter brain covers the Slingshot Framework basics. After authenticating GitHub (Module 5), members upgrade to SAM's full brain from a separate private repo — deep framework knowledge, playbooks, and methodology.
 
 ## About SlingshotAI
 
-SlingshotAI sells AI skill packages that run on your own Claude Code subscription. You own the tools, run them unlimited times, and learn AI fluency in the process. Skills cover mobile auditing, brand voice, content analysis, and more — with new skills shipping regularly.
+SlingshotAI sells AI skill packages that run on your own Claude Code subscription. You own the tools, run them unlimited times, and learn AI fluency in the process.
 
 Learn more at [slingshotai.com](https://slingshotai.com)

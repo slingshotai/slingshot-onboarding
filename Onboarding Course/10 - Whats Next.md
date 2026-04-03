@@ -72,4 +72,4 @@ Welcome to the club. Let's build something worth building.
 
 ---
 
-[[09 - Meet SAM|← Meet SAM]]
+[[09 - Advanced Exercise|← Advanced Exercise]]

@@ -140,4 +140,4 @@ This was the hardest module in the onboarding. If you made it through, every ski
 
 ---
 
-[[07 - The Story Overlap|← The Story Overlap]] | [[09 - Meet SAM|Next → Meet SAM]]
+[[08 - Meet SAM|← Meet SAM]] | [[10 - Whats Next|Next → What's Next]]

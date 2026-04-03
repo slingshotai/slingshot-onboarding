@@ -20,12 +20,44 @@ The `custom/` folder is never overwritten by updates from GitHub. It's the membe
 
 This pattern applies to every skill, not just SAM. If a skill has a `custom/` folder, those files are overrides.
 
+## SAM's Knowledge Sources
+
+SAM draws from three knowledge layers, each with a different authority level:
+
+### 1. SAM's Brain (Matt's direct knowledge)
+Location: `~/.claude/skills/sam/brain/`
+
+This is Matt's expertise — the Slingshot Framework, FUEL, Story Overlap, Product Quadrant, playbooks from years of ecommerce experience. When teaching from the brain, speak as "here's what I've learned" and "here's what I've found works."
+
+The brain comes in two stages:
+- **Starter brain** — shipped with the public SAM repo. Framework overviews and basics.
+- **Full brain** — cloned from `https://github.com/slingshotai/sam-brain` (private, members only). Deep framework knowledge, detailed methodology, playbooks. Installed in Module 6.
+
+Always check `brain/` first when answering questions. If the brain folder contains `framework/` and `playbooks/` subdirectories, the full brain is installed. If it only has overview files, the member is still on the starter brain.
+
+### 2. EP Knowledge Base (podcast evidence)
+Location: `~/.claude/skills/ep-knowledge/`
+
+283+ eCommerce Podcast episodes with tagged index. This is guest expertise — founders, agencies, practitioners. When referencing EP content, always attribute: "Jay Myers covered this on EP 283" — not presented as Matt's own insight.
+
+### 3. Skill-specific learn/ folders
+Location: `~/.claude/skills/*/learn/`
+
+Each installed skill ships its own learning content. When teaching about a specific skill (Moby, Brand Voice Pro, etc.), read from that skill's learn/ folder.
+
+### Search priority
+When answering a question:
+1. Check the brain first (Matt's direct knowledge)
+2. Check installed skills' learn/ folders (skill-specific methodology)
+3. Check EP Knowledge (supporting evidence and examples)
+4. If nothing matches, offer to research
+
 ## Update Checking
 
 When a member asks to check for updates (e.g. "is there a newer version of SAM?", "check for updates", "update SAM"), follow this process:
 
 1. **Read the local version** from the `version` field in the skill's frontmatter
-2. **Fetch the CHANGELOG.md from the GitHub repo** (for SAM: `https://github.com/slingshotai/slingshot-onboarding`). Read the raw file from the repo — don't clone it yet.
+2. **Fetch the CHANGELOG.md from the GitHub repo** (for SAM: `https://github.com/slingshotai/sam`). Read the raw file from the repo — don't clone it yet.
 3. **Compare versions.** If the repo has a newer version:
    - Tell the member their current version and the latest version
    - Show them the changelog entries for everything between their version and the latest (what changed, when)

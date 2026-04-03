@@ -1,4 +1,4 @@
-# Module 9: Meet SAM — Your Slingshot AI Mentor
+# Module 8: Meet SAM — Your Slingshot AI Mentor
 
 ## What We're Doing
 
@@ -158,4 +158,4 @@ Claude will create a file in `custom/` with your instruction. SAM reads this fol
 
 ---
 
-[[08 - Advanced Exercise|← Advanced Exercise]] | [[10 - Whats Next|Next → What's Next]]
+[[07 - The Slingshot Framework|← The Slingshot Framework]] | [[09 - Advanced Exercise|Next → Advanced Exercise]]
