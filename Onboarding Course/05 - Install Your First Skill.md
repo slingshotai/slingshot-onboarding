@@ -1,7 +1,5 @@
 # Module 5: Install Your First Skill — Brand Voice
 
-Video Link: https://www.youtube.com/watch?v=6OVG6bhXl7U
-
 ## What We're Doing
 
 This module has two parts:
@@ -12,6 +10,8 @@ This module has two parts:
 In Module 2 we installed Git (the tool that downloads repos). Now we need to authenticate it with your GitHub account so Claude can access private repos — which is where all paid skills live.
 
 ## Part 1: Authenticate GitHub
+
+Video Link: https://www.youtube.com/watch?v=6OVG6bhXl7U
 
 ### Why This Matters
 
@@ -73,59 +73,69 @@ You should see your username and "Logged in." If you do, you're ready to downloa
 
 ---
 
-## Part 2: Purchase and Install Brand Voice
+## Part 2: Purchase and Install Brand Voice Pro
 
-### Step 1: Purchase Brand Voice
+### Step 1: Purchase Brand Voice Pro
 
 > **Go to the SlingshotAI store** *(link to store)*
 >
-> Find **Brand Voice** ($49) and purchase it using your store credit.
+> Find **Brand Voice Pro** (£140 / $175) and purchase it using your store credit.
 > After purchase, you'll get access to the skill's private GitHub repo.
 
-Brand Voice analyses your ecommerce site and produces a complete voice guide — the kind of document you'd hand to a copywriter or plug into any AI tool so everything you publish sounds like you.
+Brand Voice Pro is the full package. It doesn't just define a single brand's voice — it builds a complete voice architecture across your entire portfolio. Whether you've got one brand or five, it:
+
+- **Analyses your site(s)** and existing content
+- **Builds individual voice guides** for each brand — traits, vocabulary, tone by context, sample rewrites
+- **Creates a portfolio layer** showing what's shared vs unique across brands
+- **Runs a differentiation check** to make sure your brands don't sound the same
+- **Detects voice bleed** — where one brand's voice is leaking into another's content
+
+If you've only got one brand right now, that's fine — it builds a single voice guide and you're set. When you add a second brand later, the portfolio features kick in.
 
 ### Step 2: Let Claude Install It
 
 Once you've purchased and been granted access to the repo, tell Claude:
 
 ```
-Install the Brand Voice skill from the SlingshotAI GitHub.
+Install the Brand Voice Pro skill from the SlingshotAI GitHub.
 ```
 
 Claude will:
 1. Clone the private repo (now possible because you authenticated GitHub)
-2. Copy the SKILL.md and supporting files to `~/.claude/skills/brand-voice/`
+2. Copy the SKILL.md and supporting files to `~/.claude/skills/brand-voice-pro/`
 3. Verify the skill is registered and available
 4. Explain each step as it goes
 
-You should see Claude confirm: "Brand Voice is installed and ready."
+You should see Claude confirm: "Brand Voice Pro is installed and ready."
 
 ### Step 3: Run It
 
 Now use the skill:
 
 ```
-/brand-voice https://your-store-url.com
+/brand-voice-pro https://your-store-url.com
 ```
 
 Replace with your actual store URL. Claude will:
-1. Read your member profile (it already knows your business from SAM's first-run questionnaire)
-2. Ask you a few questions about your brand personality
-3. Analyse your site's existing content
-4. Produce a complete voice guide
-5. Save it to your vault
+1. Read your member profile (it already knows your business and all your sites from SAM's first-run questionnaire)
+2. Ask whether you want to build voice guides for all your brands or just one to start
+3. Walk you through brand personality questions for each brand
+4. Analyse each site's existing content
+5. Build individual voice guides + the portfolio architecture
+6. Run a differentiation check if you have multiple brands
+7. Save everything to your vault
 
-This takes about 15-20 minutes of conversation. The output is a document you'll use every time you write copy, brief a freelancer, or set up an AI writing tool.
+This takes about 15-20 minutes per brand. The output is a complete voice system you'll use every time you write copy, brief a freelancer, or set up an AI writing tool.
 
 ### Step 4: Review with SAM
 
-After Brand Voice produces your guide, ask SAM about it:
+After Brand Voice Pro produces your guides, ask SAM about it:
 
 ```
 sam, teach me about brand voice
 ```
 
-SAM will walk you through the methodology — what the dimension scores mean, why the vocabulary bank matters, how to use the tone-by-context matrix. This is the `/learn` integration in action: every skill you install is automatically teachable through SAM.
+SAM will walk you through the methodology — what the dimension scores mean, why the vocabulary bank matters, how to use the tone-by-context matrix, and how the portfolio layer keeps your brands distinct. This is the `/learn` integration in action: every skill you install is automatically teachable through SAM.
 
 ## What Just Happened
 
@@ -138,13 +148,14 @@ You've completed the full member cycle:
 
 This exact flow works for every skill in the catalogue. Moby, iGAP, Narrative Binding, the Slingshot Course — same process every time.
 
-## Your Voice Guide
+## Your Voice Guide(s)
 
-The voice guide Claude just created is yours to keep. Use it to:
-- Brief freelance copywriters
-- Set up any AI writing tool (paste it as context)
+The voice guide(s) Claude just created are yours to keep. Use them to:
+- Brief freelance copywriters (hand them the specific brand's guide)
+- Set up any AI writing tool (paste the relevant voice guide as context)
 - Check your own writing against your defined voice
 - Share with team members so everyone writes consistently
+- Run periodic audits: `/brand-voice-pro audit` checks live content against the guides
 
 Ask SAM if you want to understand any section in more depth.
 
