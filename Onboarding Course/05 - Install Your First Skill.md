@@ -92,23 +92,35 @@ Brand Voice Pro is the full package. It doesn't just define a single brand's voi
 
 If you've only got one brand right now, that's fine — it builds a single voice guide and you're set. When you add a second brand later, the portfolio features kick in.
 
-### Step 2: Let Claude Install It
+### Step 2: Accept the GitHub Invitation
 
-Once you've purchased and been granted access to the repo, tell Claude:
+After purchase, you'll get an email from GitHub inviting you to collaborate on the `slingshotai/brand-voice-pro` repository. Click the link in the email and accept the invitation on GitHub.
+
+If you can't find the email, go directly to: `github.com/slingshotai/brand-voice-pro/invitations`
+
+### Step 3: Clone and Set Up
+
+Once you've accepted the invitation, open Claude Code and type:
 
 ```
-Install the Brand Voice Pro skill from the SlingshotAI GitHub.
+Clone the repo https://github.com/slingshotai/brand-voice-pro and set it up following the instructions in SKILL.md
 ```
 
 Claude will:
-1. Clone the private repo (now possible because you authenticated GitHub)
-2. Copy the SKILL.md and supporting files to `~/.claude/skills/brand-voice-pro/`
-3. Verify the skill is registered and available
+1. Clone the private repo (this works because you authenticated GitHub in Part 1)
+2. Follow the setup instructions in the SKILL.md
+3. Copy the skill files to the right location
 4. Explain each step as it goes
 
-You should see Claude confirm: "Brand Voice Pro is installed and ready."
+If Claude needs any help with setup, ask:
 
-### Step 3: Run It
+```
+Can you help me with any set up on this skill that is needed?
+```
+
+You should see Claude confirm that Brand Voice Pro is installed and ready.
+
+### Step 4: Run It
 
 Now use the skill:
 
@@ -127,7 +139,7 @@ Replace with your actual store URL. Claude will:
 
 This takes about 15-20 minutes per brand. The output is a complete voice system you'll use every time you write copy, brief a freelancer, or set up an AI writing tool.
 
-### Step 4: Review with SAM
+### Step 5: Review with SAM
 
 After Brand Voice Pro produces your guides, ask SAM about it:
 
