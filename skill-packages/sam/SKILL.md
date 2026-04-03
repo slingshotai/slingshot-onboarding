@@ -1,6 +1,6 @@
 ---
 name: sam
-version: "1.1.0"
+version: "1.2.0"
 description: "SAM — Slingshot AI Mentor. Interactive learning companion that teaches ecommerce and AI skills in Matt Edmundson's voice. Searches installed skills for learning content (learn/ folders), then teaches through Q&A, guided lessons, or live demonstrations using the member's own business data. Use when someone says 'sam', 'sam teach me', 'sam help me learn', 'sam what is', 'sam show me', 'sam explain', or asks SAM any question about ecommerce, AI tools, or installed skills. Also triggers when someone asks 'what can I learn about?' or 'what skills do I have?'. NOT a general assistant — SAM is specifically for teaching and learning. NOT a replacement for Claude Code — members use Claude directly for tasks, SAM for understanding."
 user-invocable: true
 argument-hint: "question_or_topic (e.g. 'teach me mobile auditing', 'why do sticky CTAs matter?', 'show me what Moby does')"
@@ -93,12 +93,46 @@ When a member says "sam, update" (or "check for updates", "is there a newer vers
 Would you like me to update everything, or pick specific items?
 ```
 
-7. **If they say "update everything"**, process each update sequentially. For each:
-   - Pull latest files from the repo
-   - Overwrite base files but preserve `custom/` folders
-   - Report what was updated
-8. **If they pick specific items**, only update those.
+7. **If they say "update everything"**, process each update sequentially using the exact steps below.
+8. **If they pick specific items**, only update those using the same steps.
 9. **After updating**, confirm: "All updates installed. Your custom/ folders were preserved."
+
+### How to perform each update (BE EXPLICIT — follow these steps exactly)
+
+**Updating the SAM repo (`slingshotai/sam`):**
+This repo contains the onboarding course, SAM skill files, and starter brain. It maps to TWO locations on the member's machine:
+
+1. `cd` to the member's SlingshotAI folder in their vault (where the onboarding course lives)
+2. Run `git pull origin main` to pull ALL changes from the repo
+3. This updates the Onboarding Course files, brain/ folder, and skill-packages/ in the vault
+4. THEN copy the updated skill files: `cp -r skill-packages/sam/SKILL.md ~/.claude/skills/sam/SKILL.md`
+5. Copy the updated changelog: `cp skill-packages/sam/CHANGELOG.md ~/.claude/skills/sam/CHANGELOG.md`
+6. Copy the updated voice guide: `cp skill-packages/sam/references/voice-guide.md ~/.claude/skills/sam/references/voice-guide.md`
+7. Copy the updated starter brain: `cp -r brain/ ~/.claude/skills/sam/brain/` (this merges — does NOT delete existing brain files)
+8. Do NOT overwrite `~/.claude/skills/sam/custom/` — skip this folder entirely
+
+**Updating SAM's brain (`slingshotai/sam-brain`):**
+1. Check if the brain repo has been cloned locally. Look in `~/.claude/skills/sam/brain/` for a `.git` folder, or check if there's a clone elsewhere on the machine.
+2. If already cloned: `cd` to the clone directory and run `git pull origin main`. Then copy all files to `~/.claude/skills/sam/brain/`
+3. If not yet cloned (member hasn't done Module 6): clone it fresh to a temp location, then copy the contents to `~/.claude/skills/sam/brain/`
+4. Report what new files were added
+
+**Updating EP Knowledge (`slingshotai/ep-knowledge`):**
+1. Check if the repo has been cloned locally. Look for it in `~/.claude/skills/ep-knowledge/`
+2. If already cloned: `cd` to the directory and run `git pull origin main`
+3. If the repo lives outside the skills folder, find it and pull there, then copy updated files to `~/.claude/skills/ep-knowledge/`
+4. Report new episode count
+
+**Updating purchased skills (e.g. `slingshotai/brand-voice-pro`):**
+1. Find where the skill repo was cloned on the machine (likely in a downloads or dev folder)
+2. `cd` to that directory and run `git pull origin main`
+3. Copy updated files to `~/.claude/skills/[skill-name]/` — SKILL.md, references/, learn/ etc.
+4. Do NOT overwrite `~/.claude/skills/[skill-name]/custom/`
+5. Report the version change
+
+### Critical: git pull is the key command
+
+The most common reason updates fail is that Claude tries to compare files manually or re-clone instead of using `git pull`. **Always use `git pull origin main`** in the existing cloned directory. This pulls ALL changes — new files, modified files, deleted files. It is the correct and complete way to update from a Git repo.
 
 ### Version and changelog standard for all skills
 

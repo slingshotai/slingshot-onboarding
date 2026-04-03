@@ -1,5 +1,10 @@
 # SAM — Changelog
 
+## v1.2.0 — 2026-04-03
+
+- **Explicit update instructions**: Update process now has step-by-step commands for each component (SAM repo, brain, EP Knowledge, purchased skills). Uses `git pull origin main` as the primary update mechanism — no more partial updates.
+- **Version tracking on all skills**: BVP, EP Knowledge, and EP Weekly Brief all have version fields and changelogs.
+
 ## v1.1.0 — 2026-04-03
 
 Major architecture update.
