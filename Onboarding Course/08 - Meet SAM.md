@@ -1,7 +1,7 @@
 # Module 8: Meet SAM — Your Slingshot AI Mentor
 
 Video link: https://www.youtube.com/watch?v=TP1F5L_fJ3Q
-
+https://www.youtube.com/watch?v=J81iqvAy39M
 ## What We're Doing
 
 You've already been using Claude Code directly. Now it's time to meet SAM — the layer on top that turns every skill into a learning experience.

@@ -1,5 +1,7 @@
 # Module 10: What's Next
 
+Video link: https://www.youtube.com/watch?v=Bmqvo5Le3PM
+
 ## You Did It
 
 You've completed the SlingshotAI onboarding. Here's what you've set up:

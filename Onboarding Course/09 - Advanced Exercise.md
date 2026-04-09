@@ -1,6 +1,8 @@
-# Module 6: Advanced Exercise — APIs & MCP Servers
+# Module 9: Advanced Exercise — APIs & MCP Servers
 
 ## Part 1: Introduction
+
+Video: Claude in the CLI - https://www.youtube.com/watch?v=A0c67U-qNr8
 
 Some SlingshotAI skills need to connect to external services. This module covers two types of connection:
 
@@ -24,7 +26,7 @@ Most SlingshotAI skills don't need either. But the powerful ones do — Moby nee
 
 ## Part 2: API Keys
 
-Video link: *(coming soon)*
+Video link: https://www.youtube.com/watch?v=oi7d02MmBuU
 
 ### What Is an API Key?
 
@@ -89,7 +91,7 @@ If you're in a corporate environment and can't access Google Cloud Console, opti
 
 ## Part 3: MCP Servers
 
-Video link: *(coming soon)*
+Video link: https://www.youtube.com/watch?v=_LwAi-wUAp4
 
 ### What Is an MCP Server?
 
@@ -130,7 +132,7 @@ What MCP servers do I have connected?
 
 ### Safety Note
 
-The same safety rules apply to MCP servers as to skills — only install them from trusted sources. Anthropic maintains a list of verified MCP servers, and any MCP server required by a SlingshotAI skill has been tested by us.
+==The same safety rules apply to MCP servers as to skills — only install them from trusted sources. Anthropic maintains a list of verified MCP servers, and any MCP server required by a SlingshotAI skill has been tested by us.
 
 ---
 

@@ -99,9 +99,7 @@ Let's install one now. Type this into Claude:
 I want to install a skill from Anthropic. What's available?
 ```
 
-> **Note:** The prompts in this module are the latest versions. If the video shows slightly different wording, follow the written prompts here.
-
-Claude will show you the list. When it does, ask it to **install the skill-creator** — we'll need this in Module 4 when you build your own skill:
+Claude will show you the list. When it does, ask it to **install the skill-creator** — we'll need this in the bonus module if you want to build your own skills:
 
 ```
 Can you install the skill-creator skill? We'll need it later.
